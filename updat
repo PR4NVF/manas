@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+     int i, size, x, pos;
+     int a[]={0,2,4,6,8};
+     size=sizeof(a)/sizeof(a[0]);
+     printf(" array elements before update operation :");
+     for(i=0;i<size;i++)
+        printf("\na[%d]= %d", i, a[i]);
+     printf("\nposition to update the element: ");
+     scanf("%d", &pos);
+     printf("new element: ");
+     scanf("%d", &x);
+     a[pos-1]=x;
+     printf(" array elements after update operation:");
+     for(i=0;i<size;i++)
+        printf("\na[%d]= %d", i, a[i]);
+}
